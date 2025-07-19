@@ -22,14 +22,12 @@ pyautogui.press('enter')
 time.sleep(1)
 pyautogui.hotkey('num7','*','num8', 'enter', interval=1) #num7 (tecla numérica-derecha) <> 7 (teclado general)
 
-#acción 4: resetear calculadora
+#acción 4: resetear calculadora (con recorte)
 time.sleep(1)
-ubicacionReset = pyautogui.locateOnScreen('reset.png', confidence=0.8)
-if ubicacionReset is not None:
-    centroReset = pyautogui.center(ubicacionReset)
-    pyautogui.click(centroReset)
-else:
-    print("No se encontró el símbolo C para resetear")
+ubicacionReset = pyautogui.locateOnScreen('reset.png')
+
+centroReset = pyautogui.center(ubicacionReset)
+pyautogui.click(centroReset)
 
 #Ahora otra operación matemática que no me acepta por teclado como el "+" y otras.
 #Usando recorte:
