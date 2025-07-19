@@ -36,8 +36,11 @@ else:
 time.sleep(1)
 pyautogui.press('num5')
 
+time.sleep(1)
 ubicacionSuma = pyautogui.locateOnScreen('suma.png')
 centroSuma = pyautogui.center(ubicacionSuma)
 pyautogui.click(centroSuma)
-pyautogui.press('num5')
+
+pyautogui.press('num6')
+time.sleep(0.5)
 pyautogui.press('enter')
