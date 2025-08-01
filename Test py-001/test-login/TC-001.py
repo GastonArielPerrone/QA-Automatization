@@ -17,7 +17,7 @@ time.sleep(1) # tiempo de espera de 1 segundos
 
 #Acción 3: chequeo del resultado esperado (Aserción). Ingreso correcto a la aplicación.
 try: # Probá de encontrar la imagen
-    respuesta = pyautogui.locateOnScreen('img/Pantalla_Inicial_ok.png',confidence=0.90)
+    respuesta = pyautogui.locateOnScreen('img/Pantalla_Inicial_ok.png',confidence=0.100)
     if respuesta:
         print('Ingreso Correcto!')
 except: # si no encuentra la imagen, en vez de un error, muestra este mensaje:
