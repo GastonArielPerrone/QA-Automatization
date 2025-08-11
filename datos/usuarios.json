@@ -1,0 +1,17 @@
+[
+    {
+        "usuario": "admin",
+        "clave": "usernew",
+        "esperado": true
+    },
+    {
+        "usuario": "admin",
+        "clave": "incorrecta",
+        "esperado": false
+    },
+    {
+        "usuario": "otro",
+        "clave": "usernew",
+        "esperado": false
+    }
+]

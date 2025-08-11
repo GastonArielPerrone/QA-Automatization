@@ -1,0 +1,8 @@
+============================= test session starts =============================
+platform win32 -- Python 3.13.3, pytest-8.3.5, pluggy-1.6.0
+rootdir: C:\Users\balbi\OneDrive\Escritorio\test_pytest
+collected 3 items
+
+tests\test_pytest_001.py ...                                             [100%]
+
+============================= 3 passed in 17.94s ==============================
